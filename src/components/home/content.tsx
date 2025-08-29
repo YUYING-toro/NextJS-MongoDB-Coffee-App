@@ -20,7 +20,7 @@ const Content = () => {
           Home
         </Link>
         <Link href="/camera" className="text-white hover:underline">
-          Camera Webpage
+          404 Webpage
         </Link>
         <Link href="/login" className="text-white hover:underline">
           Login

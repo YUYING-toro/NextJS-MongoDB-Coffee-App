@@ -29,7 +29,7 @@ const CommentEditor = ({ isOpen, setIsOpen }: CommentEditorProps) => {
   // Add post
   const queryClient = useQueryClient();
   const searchParams = useSearchParams();
-  const currentPage = searchParams.get("page") || "1";
+  const currentPage = searchParams?.get("page") || "1";
   const router = useRouter();
 
   const { mutate: addPostMutate, isPending } = useMutation({
@@ -67,7 +67,7 @@ const CommentEditor = ({ isOpen, setIsOpen }: CommentEditorProps) => {
       <DialogBackdrop className="fixed inset-0 bg-black/70" />
       <DialogPanel className="max-w-lg z-50 space-y-4 bg-[#131313] border border-white/10 p-4 rounded-lg">
         <DialogTitle className="font-bold text-white">
-          What's on your mind?
+          Write a review
         </DialogTitle>
         <input
           placeholder="Title"

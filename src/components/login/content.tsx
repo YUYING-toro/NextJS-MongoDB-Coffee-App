@@ -30,7 +30,7 @@ const Content = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(values);
+    alert("Form submitted! " + JSON.stringify(values));
   };
 
   return (

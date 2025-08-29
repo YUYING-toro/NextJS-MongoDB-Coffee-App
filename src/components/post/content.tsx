@@ -4,6 +4,7 @@ import Post from "@/components/post/post";
 import { useRouter } from "next/navigation";
 import useQueryPost from "@/hooks/use-query-post";
 import { useParams } from "next/navigation";
+import Button from "@/components/common/Button";
 
 const Content = () => {
   const router = useRouter();
@@ -14,12 +15,7 @@ const Content = () => {
   }
   return (
     <div>
-      <button
-        onClick={() => router.back()}
-        className="text-sm text-white font-bold"
-      >
-        {"← Back"}
-      </button>
+      <Button onClick={() => router.back()}>{"← Back"}</Button>
       <Post post={data} />
     </div>
   );

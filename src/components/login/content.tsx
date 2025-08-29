@@ -11,6 +11,7 @@ import {
   Select,
   Textarea,
 } from "@headlessui/react";
+import Button from "@/components/common/Button";
 
 const Content = () => {
   const router = useRouter();
@@ -109,12 +110,9 @@ const Content = () => {
           </button>
         </div>
       </form>
-      <button
-        onClick={() => router.back()}
-        className="text-sm text-white font-bold mt-6"
-      >
+      <Button onClick={() => router.back()} className="mt-2">
         {"← Back"}
-      </button>
+      </Button>
     </div>
   );
 };

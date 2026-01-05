@@ -37,7 +37,7 @@ const Content = () => {
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen">
       <img
-        src="/images/banner-coffeeBean.png"
+        src="./images/banner-coffeeBean.png"
         alt="banner"
         className="absolute inset-0 w-full h-full object-cover opacity-40 blur-sm -z-10"
       />

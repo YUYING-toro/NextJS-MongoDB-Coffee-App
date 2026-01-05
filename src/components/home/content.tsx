@@ -8,7 +8,7 @@ const Content = () => {
   return (
     <>
       <Image
-        src="/images/banner-coffeeBean.png"
+        src="./images/banner-coffeeBean.png"
         className="w-full rounded-lg border border-white/10"
         width={1584}
         height={396}

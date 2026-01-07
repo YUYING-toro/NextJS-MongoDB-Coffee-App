@@ -1,9 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-    images: {
-    unoptimized: true, // Close Image Optimization API since export mode does not support it
-  },
+  output: "standalone",
 };
 
 export default nextConfig;

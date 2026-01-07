@@ -5,11 +5,16 @@ import { getPost } from "@/services/post";
 const useQueryPost = () => {
   //<Link key={post.id} href={`/post/${post.id}`}>
   //await fetch(`/api/post/detail?id=${id}`);
-  const { id } = useParams();
+const params = useParams();
+  const id =
+    typeof params?.id === "string"
+      ? params.id
+      : undefined;
 
   return useQuery({
     queryKey: ["post", id],
-    queryFn: () => getPost(id as string),
+    enabled: !!id,
+    queryFn: () => getPost(id!),
   });
 };
 
